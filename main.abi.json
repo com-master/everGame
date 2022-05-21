@@ -1,0 +1,84 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": [],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "renderHelloWorld",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "touch",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_move",
+			"inputs": [
+				{"name":"id","type":"uint32"},
+				{"name":"way","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_spawn",
+			"inputs": [
+				{"name":"x","type":"uint32"},
+				{"name":"y","type":"uint32"},
+				{"name":"types","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "id_block",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"owner","type":"uint256"},{"name":"types","type":"uint8"}],"name":"id_block","type":"map(uint32,tuple)"}
+			]
+		},
+		{
+			"name": "id_cords",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"x","type":"uint32"},{"name":"y","type":"uint32"}],"name":"id_cords","type":"map(uint32,tuple)"}
+			]
+		},
+		{
+			"name": "timestamp",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"timestamp","type":"uint32"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"lastid","type":"uint32"},
+		{"components":[{"name":"owner","type":"uint256"},{"name":"types","type":"uint8"}],"name":"id_block","type":"map(uint32,tuple)"},
+		{"components":[{"name":"x","type":"uint32"},{"name":"y","type":"uint32"}],"name":"id_cords","type":"map(uint32,tuple)"},
+		{"name":"timestamp","type":"uint32"}
+	]
+}
